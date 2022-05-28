@@ -1,0 +1,30 @@
+{
+  "name": "craftserve-bot",
+  "version": "1.0.1",
+  "main": "index.js",
+  "author": "k435",
+  "dependencies": {
+    "@discordjs/builders": "^0.13.0",
+    "@discordjs/opus": "^0.5.3",
+    "@discordjs/rest": "^0.4.1",
+    "@discordjs/voice": "^0.9.0",
+    "discord-player": "^5.2.2",
+    "discord.js": "^12.5.3",
+    "dotenv": "^16.0.1",
+    "node-fetch": "^2.6.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Craftserve/craftserve-bot.git"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Craftserve/craftserve-bot/issues"
+  },
+  "homepage": "https://github.com/Craftserve/craftserve-bot#readme",
+  "description": ""
+}
