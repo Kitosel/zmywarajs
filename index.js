@@ -1,15 +1,17 @@
-﻿const Discord = require('discord.js');
-const {token} = require('./config.json');
-const bot = new Discord.Client({
-    disableMentions: "everyone",
-    messageCacheLifetime: 3600,
+﻿const Discord = require("discord.js");
+const fs = require("fs");
+
+const TOKEN = 'OTQ0MDYzNzQ4MTI0MDY1ODIz.Yg8J4Q.o-jruBaFg2uYlMSd10Q4BA7HJwI';
+
+const client = new Discord.Client({
+    intents: [
+        "GUILDS",
+        "GUILD_MESSAGES",
+    ]
 });
 
-bot.commands = new Discord.Collection()
-bot.aliases = new Discord.Collection();
-bot.owners = ["307212579305160704", "749259944678785085", "464890810710622210"]
+client.once("ready", () => {
+    console.log(`Logged in as ${client.user.tag}`);
+});
 
-require("./commandHandler")(bot)
-require("./events/eventHandler")(bot);
-
-return bot.login(token);
+client.login(TOKEN);
